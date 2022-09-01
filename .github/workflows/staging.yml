@@ -20,7 +20,7 @@ jobs:
           extended: true
    
     - name: Build
-      run: hugo --config "config.toml" --cleanDestinationDir --minify
+      run: hugo --config "config.toml" -b "https://products-qa.fileformat.com" --cleanDestinationDir --minify
     - name: Deploy to S3
       run: hugo deploy --config "config.toml" --maxDeletes=-1 --target "staging" --force
       env:
