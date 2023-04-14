@@ -5,7 +5,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - name: Checkout theme repo
       uses: actions/checkout@main
@@ -16,7 +16,7 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-          hugo-version: '0.83.0'
+          hugo-version: 'latest'
           extended: true
    
     - name: Build
