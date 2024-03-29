@@ -8,7 +8,7 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: Checkout theme repo
-      uses: actions/checkout@main
+      uses: actions/checkout@v2
       with:
           repository: OpenizePtyLtd/products.fileformat.com
           token: ${{ secrets.REPO_TOKEN }}
