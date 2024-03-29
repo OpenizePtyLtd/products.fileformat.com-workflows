@@ -5,10 +5,10 @@ on:
 
 jobs:
   deploy:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout theme repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@main
       with:
           repository: OpenizePtyLtd/products.fileformat.com
           token: ${{ secrets.REPO_TOKEN }}
